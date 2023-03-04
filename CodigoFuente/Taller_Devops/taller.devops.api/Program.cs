@@ -5,6 +5,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using System.Reflection;
 using taller.devops.api.Extensions;
+using taller.devops.application.ioc;
 using taller.devops.infraestructura.extensions;
 using taller.devops.infraestructura.ioc;
 
@@ -15,7 +16,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options => {
+builder.Services.AddSwaggerGen(options =>
+{
     options.ExampleFilters();
 
     var version = builder.Configuration["OpenApi:info:version"];
@@ -65,7 +67,10 @@ builder.Services.AddSwaggerGen(options => {
 builder.Services.AddSwaggerExamples();
 builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetEntryAssembly());
 builder.Services.AddHealthChecks();
+builder.Services.RegisterDependencies();
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
+
 
 
 builder.Services.RegisterDependencies();

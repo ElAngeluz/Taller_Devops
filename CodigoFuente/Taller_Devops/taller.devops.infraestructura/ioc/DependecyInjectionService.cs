@@ -1,16 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Serilog;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
-using OpenTelemetry.Extensions.Hosting;
-using System.Threading.Tasks;
-using OpenTelemetry.Instrumentation.Http;
+using Serilog;
+using System.Reflection;
 
 namespace taller.devops.infraestructura.ioc
 {
@@ -28,7 +21,7 @@ namespace taller.devops.infraestructura.ioc
             // Se agrega Telemetria
             _ = int.TryParse(configuration["Jaeger:Telemetry:Port"], out int portNumber);
 
-            
+
             services.AddOpenTelemetry().WithTracing((tracerProviderBuilder) =>
             {
                 tracerProviderBuilder

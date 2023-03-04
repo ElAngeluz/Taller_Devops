@@ -1,4 +1,4 @@
-﻿namespace taller.devops.applicacion.models.dtos
+﻿namespace taller.devops.application.models.dtos
 {
     public class MsDtoResponse<T>
     {

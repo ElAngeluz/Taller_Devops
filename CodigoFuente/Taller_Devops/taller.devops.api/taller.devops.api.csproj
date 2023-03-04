@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\taller.devops.application\taller.devops.application.csproj" />
     <ProjectReference Include="..\taller.devops.infraestructura\taller.devops.infraestructura.csproj" />
   </ItemGroup>
 

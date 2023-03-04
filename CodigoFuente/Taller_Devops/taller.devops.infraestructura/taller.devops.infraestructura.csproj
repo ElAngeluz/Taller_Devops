@@ -28,7 +28,7 @@
   </ItemGroup>
   
 <ItemGroup>
-  <ProjectReference Include="..\taller.devops.applicacion\taller.devops.applicacion.csproj" />
+  <ProjectReference Include="..\taller.devops.application\taller.devops.application.csproj" />
 </ItemGroup>
 
 </Project>

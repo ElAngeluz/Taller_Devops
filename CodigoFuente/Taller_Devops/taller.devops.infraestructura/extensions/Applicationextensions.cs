@@ -2,14 +2,9 @@
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Serilog;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
-using taller.devops.applicacion.models.dtos;
 using taller.devops.application.application.models.exceptions;
+using taller.devops.application.models.dtos;
 
 namespace taller.devops.infraestructura.extensions
 {
