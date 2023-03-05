@@ -23,8 +23,4 @@
     <ProjectReference Include="..\taller.devops.infraestructura\taller.devops.infraestructura.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\V1\" />
-  </ItemGroup>
-
 </Project>
