@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "4f9d9942-fcef-4e31-ad6b-04d87dd2e243",
+		"name": "DEVSU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2142153"
+	},
+	"item": [
+		{
+			"name": "Devops",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Parse-REST-API-Key",
+						"value": "2f5ae96c-b558-4c7b-a5g0-a501ae1c3f6c",
+						"type": "text"
+					},
+					{
+						"key": "X-JWT-KWY",
+						"value": "{{JWT}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "{{Suscripcion}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\" : \"This is a test\",\r\n    \"to\": \"Juan Perez\", \r\n    \"from\": \"Rita Asturia\", \r\n    \"RimeToLifeSec\":45\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{HOST}}/Devops",
+					"protocol": "https",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"Devops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readiness",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Parse-REST-API-Key",
+						"value": "2f5ae96c-b558-4c7b-a5g0-a501ae1c3f6c",
+						"type": "text"
+					},
+					{
+						"key": "X-JWT-KWY",
+						"value": "{{JWT}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "{{Suscripcion}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\" : \"This is a test\",\r\n    \"to\": \"Juan Perez\", \r\n    \"from\": \"Rita Asturia\", \r\n    \"RimeToLifeSec\":45\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{HOST}}/health/readiness",
+					"protocol": "https",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"health",
+						"readiness"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liveness",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Parse-REST-API-Key",
+						"value": "2f5ae96c-b558-4c7b-a5g0-a501ae1c3f6c",
+						"type": "text"
+					},
+					{
+						"key": "X-JWT-KWY",
+						"value": "{{JWT}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "9ca8c1999c5b402183404742eab1668b",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\" : \"This is a test\",\r\n    \"to\": \"Juan Perez\", \r\n    \"from\": \"Rita Asturia\", \r\n    \"RimeToLifeSec\":45\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{HOST}}/health/liveness",
+					"protocol": "https",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"health",
+						"liveness"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "headerPrefix",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "Hazu3953",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "User.Read",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://login.microsoftonline.com/8b178d44-6aac-48ed-9d57-103a0f30a570/oauth2/v2.0/token",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "Rv38Q~AY0XKkQ6.FpEPcSdqYvcJm~OzQpcK0tcHR",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "34b46cd8-c6e0-44f3-a03d-9260bc381e66",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "tallerdevops@angeluzcorp.com",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "TokenTallerDevops",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "password_credentials",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

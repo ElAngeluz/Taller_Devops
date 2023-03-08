@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptions_6408402dfe4c5c0037070001_displayName": {
+            "value": "VS Profesional"
+        },
+        "subscriptions_6408402dfe4c5c0037070002_displayName": {
+            "value": "VS Profesional"
+        },
+        "users_1_lastName": {
+            "value": "rivera"
+        },
+        "serverfarms_TallerDevops_name": {
+            "value": "TallerDevops"
+        },
+        "sites_dev3_taller_devops_name": {
+            "value": "dev3-taller-devops"
+        },
+        "sites_pro1_taller_devops_name": {
+            "value": "pro1-taller-devops"
+        },
+        "sites_pro2_taller_devops_name": {
+            "value": "pro2-taller-devops"
+        },
+        "virtualNetworks_appgateway_name": {
+            "value": "appgateway"
+        },
+        "service_apim_tallerdevops_name": {
+            "value": "apim-tallerdevops"
+        },
+        "virtualNetworks_vnettallerdevops_name": {
+            "value": "vnettallerdevops"
+        },
+        "publicIPAddresses_gw_taller_devops_name": {
+            "value": "gw-taller-devops"
+        },
+        "privateEndpoints_pro1_taller_devops_name": {
+            "value": "pro1-taller-devops"
+        },
+        "privateEndpoints_pro2_taller_devops_name": {
+            "value": "pro2-taller-devops"
+        },
+        "applicationGateways_appgw_taller_devops_name": {
+            "value": "appgw-taller-devops"
+        },
+        "privateDnsZones_privatelink_azurewebsites_net_name": {
+            "value": "privatelink.azurewebsites.net"
+        },
+        "networkInterfaces_pro1_taller_devops_nic_85fa8981_271b_4499_9dc5_12faaeed46e0_name": {
+            "value": "pro1-taller-devops.nic.85fa8981-271b-4499-9dc5-12faaeed46e0"
+        },
+        "networkInterfaces_pro2_taller_devops_nic_b539b70a_d60a_4cfc_96fc_f2a6e19b97ef_name": {
+            "value": "pro2-taller-devops.nic.b539b70a-d60a-4cfc-96fc-f2a6e19b97ef"
+        }
+    }
+}

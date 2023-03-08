@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "taller.devops.api", "taller.devops.api\taller.devops.api.csproj", "{1CC88524-75D7-4102-8A61-91B04889D06A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taller.devops.infraestructura", "taller.devops.infraestructura\taller.devops.infraestructura.csproj", "{608198DC-5CE6-4EF0-BB3E-CBAFC491141F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "taller.devops.infraestructura", "taller.devops.infraestructura\taller.devops.infraestructura.csproj", "{608198DC-5CE6-4EF0-BB3E-CBAFC491141F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taller.devops.domain", "taller.devops.domain\taller.devops.domain.csproj", "{69378C2E-E167-4295-84E4-486D6C98B21D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "taller.devops.domain", "taller.devops.domain\taller.devops.domain.csproj", "{69378C2E-E167-4295-84E4-486D6C98B21D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "taller.devops.application", "taller.devops.application\taller.devops.application.csproj", "{8D09EF1B-AD73-423B-8CB0-DDE0F14DD7E7}"
 EndProject
@@ -15,7 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1B0897C9-CB8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AF55EA46-37C5-4566-A88C-664F07639530}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taller.devops.test", "taller.devops.test\taller.devops.test.csproj", "{383B8545-8A8B-4963-8713-98645AFCCAFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "taller.devops.test", "taller.devops.test\taller.devops.test.csproj", "{383B8545-8A8B-4963-8713-98645AFCCAFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8BF060BD-A3D6-44AA-A7BE-99C94BF34A17}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
