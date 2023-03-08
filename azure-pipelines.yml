@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: '63dbce8d-7bea-41e0-8a51-fdfb00fd1b1f'
   imageRepository: 'tallerdevops'
   containerRegistry: 'ansoftcontainers.azurecr.io'
-  dockerfilePath: '$(Build.SourcesDirectory)/CodigoFuente/Taller_Devops/taller.devops.api/Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/CodigoFuente/Taller_Devops/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
