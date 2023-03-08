@@ -8,7 +8,7 @@ namespace taller.devops.test
             SendNotificationRepository SendTransaccion = new();
 
 
-            var result = SendTransaccion.SendTransaccion(new application.models.dtos.notifications.DTOSendNotification() 
+            var result = SendTransaccion.SendTransaccion(new application.models.dtos.notifications.DTOSendNotification()
             {
                 From = "Rita Asturia",
                 Message = "This is a test",

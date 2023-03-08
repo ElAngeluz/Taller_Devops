@@ -15,12 +15,14 @@ namespace taller.devops.api.Extensions
                 config.ReportApiVersions = true;
             });
 
+
             services.AddVersionedApiExplorer(
                 options =>
                 {
                     options.GroupNameFormat = "'v'VVV";
                     options.SubstituteApiVersionInUrl = true;
                 });
+
 
             return services;
 

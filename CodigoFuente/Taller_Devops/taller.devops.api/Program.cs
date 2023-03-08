@@ -5,6 +5,7 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using System.Reflection;
 using taller.devops.api.Extensions;
+using taller.devops.api.Middleware;
 using taller.devops.application.ioc;
 using taller.devops.infraestructura.extensions;
 using taller.devops.infraestructura.ioc;
@@ -84,6 +85,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 
 }
+
+string apiKey = builder.Configuration["ApiKey"];
+app.UseApiKeyMiddleware(apiKey);
 
 app.UseHttpsRedirection();
 app.ConfigureExceptionHandler();
