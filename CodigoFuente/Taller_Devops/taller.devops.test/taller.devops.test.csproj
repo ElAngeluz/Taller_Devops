@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\taller.devops.application\taller.devops.application.csproj" />
+  </ItemGroup>
+
 </Project>
