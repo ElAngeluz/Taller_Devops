@@ -10,11 +10,11 @@ namespace taller.devops.application.repositories.notification
 
         }
 
-        public (bool TrxExistosa, object Data) SendTransaccion(DTOSendNotification sendNotification)
+        public object SendTransaccion(DTOSendNotification sendNotification)
         {
             try
             {
-
+                return $"Hello {sendNotification.From} your message will be send";
             }
             catch (Exception EX)
             {

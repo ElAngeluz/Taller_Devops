@@ -4,6 +4,6 @@ namespace taller.devops.application.interfaces.services
 {
     public interface ISendNotification
     {
-        (bool TrxExistosa, object Data) SendTransaccion(DTOSendNotification sendNotification);
+        object SendTransaccion(DTOSendNotification sendNotification);
     }
 }

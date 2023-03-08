@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using taller.devops.application.interfaces.services;
+using taller.devops.application.repositories.notification;
 
 namespace taller.devops.application.ioc
 {
@@ -6,7 +8,7 @@ namespace taller.devops.application.ioc
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            //services.AddScoped<IQualtricsRepository, QualtricsRepository>();
+            services.AddScoped<ISendNotification, SendNotificationRepository>();
             return services;
         }
     }
