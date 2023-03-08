@@ -14,7 +14,7 @@ variables:
   imageRepository: 'tallerdevops'
   containerRegistry: 'ansoftcontainers.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/CodigoFuente/Taller_Devops/Dockerfile'
-  tag: '$(Build.BuildId)'
+  tag: 'latest'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
