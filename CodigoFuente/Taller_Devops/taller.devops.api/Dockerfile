@@ -7,11 +7,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["taller.devops.api/taller.devops.api.csproj", "taller.devops.api/"]
+COPY ["taller.devops.api.csproj", "taller.devops.api/"]
 RUN dotnet restore "taller.devops.api/taller.devops.api.csproj"
 COPY . .
 WORKDIR "/src/taller.devops.api"
-RUN dotnet publish "taller.devops.api/taller.devops.api.csproj" -c Release -o /app/publish --no-restore --self-contained true /p:PublishTrimmed=true /p:PublishSingleFile=true
+RUN dotnet publish "taller.devops.api.csproj" -c Release -o /app/publish --no-restore --self-contained true /p:PublishTrimmed=true /p:PublishSingleFile=true
 
 FROM base AS final
 WORKDIR /app
