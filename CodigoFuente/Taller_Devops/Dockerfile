@@ -17,7 +17,7 @@ WORKDIR "/src/taller.devops.api"
 RUN dotnet build "taller.devops.api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "taller.devops.api.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "taller.devops.api.csproj" -c Release -o /app/publish --no-restore --self-contained true /p:PublishTrimmed=true /p:PublishSingleFile=true
 
 FROM base AS final
 WORKDIR /app
